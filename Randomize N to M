@@ -10,13 +10,11 @@ public class RandomizeNtoM {
         int m = Math.abs(scan.nextInt());
         Random random = new Random();
         if (m > n) {
-
             for (int i = n; i < m + 1; i++) {
                 int randomNum = random.nextInt(m - n+1) + n;
                 System.out.print(randomNum + " ");
             }
         }else{
-
             for (int i = m; i < n + 1; i++) {
                 int randomNum = random.nextInt(n - m+1) + m;
                 System.out.print(randomNum + " ");
